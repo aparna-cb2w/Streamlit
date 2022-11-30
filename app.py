@@ -3,13 +3,18 @@ import pandas as pd
 import numpy as np
 
 def main():
-  st.title("Find whether the given number is odd or even")
-  num = st.number_input("Enter a integer")
+  html_temp = """
+  <div style="background-color:black;padding:10px">
+  <h2 style="color:black;text-align:center;">Find whether the given number is odd or even</h2>
+  </div>
+  """
+  st.markdown(html_temp,unsafe_allow_html=True)
+  num = st.number_input("Enter an integer")
   
   if(num % 2 == 0):
-    result = 'even'
+    result = 'EVEN'
   else:
-    result= 'odd'
+    result= 'ODD'
   
   st.success('The number is {}'.format(result))
   
