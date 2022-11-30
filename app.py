@@ -11,17 +11,12 @@ def main():
   st.markdown(html_temp,unsafe_allow_html=True)
   num = st.number_input("Enter a number")
   
-  if type(num) != 'int':
-    st.success("Please enter an integer")
-    
+  if(num % 2 == 0):
+    result = 'EVEN'
   else:
-  
-    if(num % 2 == 0):
-      result = 'EVEN'
-    else:
-      result= 'ODD'
+    result= 'ODD'
 
-    st.success('The number is {}'.format(result))
+  st.success('The number is {}'.format(result))
 
 if __name__=='__main__':
   main()
