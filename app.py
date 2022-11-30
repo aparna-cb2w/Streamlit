@@ -9,14 +9,19 @@ def main():
   </div>
   """
   st.markdown(html_temp,unsafe_allow_html=True)
-  num = st.integer_input("Enter a number")
+  num = st.number_input("Enter a number")
   
-  if(num % 2 == 0):
-    result = 'EVEN'
+  if type(num) != 'int'
+    st.sucess("Please enter an integer")
+    
   else:
-    result= 'ODD'
   
-  st.success('The number is {}'.format(result))
-  
+    if(num % 2 == 0):
+      result = 'EVEN'
+    else:
+      result= 'ODD'
+
+    st.success('The number is {}'.format(result))
+
 if __name__=='__main__':
   main()
