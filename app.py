@@ -12,7 +12,7 @@ def main():
   num = st.number_input("Enter a number")
   
   if type(num) != 'int':
-    st.sucess("Please enter an integer")
+    st.success("Please enter an integer")
     
   else:
   
