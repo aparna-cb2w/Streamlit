@@ -9,7 +9,7 @@ def main():
   </div>
   """
   st.markdown(html_temp,unsafe_allow_html=True)
-  num = int(st.number_input("Enter a number"))
+  num = st.integer_input("Enter a number")
   
   if(num % 2 == 0):
     result = 'EVEN'
