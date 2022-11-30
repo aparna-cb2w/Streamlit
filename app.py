@@ -4,13 +4,7 @@ import numpy as np
 
 def main():
   st.title("Find whether the given number is odd or even")
-  html_temp = """
-  <div style="background-color:black;padding:10px">
-  <h2 style="color:black;text-align:center;">Division of 2 Numbers</h2>
-  </div>
-  """
-  st.markdown(html_temp,unsafe_allow_html=True)
-  num = st.number_input("Number")
+  num = st.number_input("Enter a integer")
   
   if(num % 2 == 0):
     result = 'even'
