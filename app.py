@@ -11,7 +11,7 @@ def main():
   st.markdown(html_temp,unsafe_allow_html=True)
   num = st.number_input("Enter a number")
   
-  if type(num) != 'int'
+  if type(num) != 'int':
     st.sucess("Please enter an integer")
     
   else:
